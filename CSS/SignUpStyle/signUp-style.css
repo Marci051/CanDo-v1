@@ -1,0 +1,89 @@
+body main {
+  position: relative;
+}
+body main form {
+  margin-top: 7%;
+  width: 70%;
+  color: #6e6d6d;
+}
+body main form fieldset {
+  border: unset;
+  border-top: 1px solid gray;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2%;
+}
+body main form fieldset legend {
+  font-size: clamp(20px, 2vw, 40px);
+  color: #909090;
+}
+body main form fieldset div {
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 7%;
+}
+body main form fieldset div input,
+body main form fieldset div button,
+body main form fieldset div select {
+  font-family: Vazirmatn;
+  background-color: #171717;
+  color: white;
+  border: unset;
+  padding: 15px;
+  border-radius: 10px;
+  outline-style: none;
+}
+body main form fieldset div input:focus,
+body main form fieldset div button:focus,
+body main form fieldset div select:focus {
+  border-bottom: 2px solid #058022;
+}
+body main form fieldset div:nth-of-type(5) {
+  width: 98%;
+}
+body main form fieldset div:nth-of-type(5) input {
+  text-align: left;
+}
+body main form fieldset div:nth-of-type(8) {
+  width: 98%;
+}
+body main form fieldset div:nth-of-type(8) button {
+  background-color: #313131;
+  color: #909090;
+  font-family: Vazirmatn;
+}
+body main form fieldset div:nth-of-type(8) button:hover {
+  transition-duration: 0.3s;
+  opacity: 70%;
+  border: 1px solid #058022;
+  cursor: pointer;
+}
+body main form fieldset div:nth-of-type(8) p {
+  text-align: center;
+}
+body main form fieldset div:nth-of-type(8) p a {
+  color: #058022;
+  text-decoration: none;
+}
+body main form fieldset div:nth-of-type(8) p a:hover {
+  opacity: 70%;
+}
+body .bgImage {
+  position: absolute;
+  z-index: -1000;
+  left: 0;
+  top: 0;
+}
+body .bgImage img {
+  width: 400px;
+}
+
+@media only screen and (max-width: 800px) {
+  body main form {
+    width: 90%;
+  }
+  body main form fieldset div {
+    width: 98%;
+  }
+}/*# sourceMappingURL=signUp-style.css.map */

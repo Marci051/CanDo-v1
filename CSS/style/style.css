@@ -1,0 +1,309 @@
+body {
+  direction: rtl;
+  font-family: Vazirmatn;
+  background-color: #030303;
+  background-repeat: repeat;
+  background-attachment: fixed;
+  padding: 0 10%;
+}
+body header {
+  position: sticky;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: #030303;
+  padding-bottom: 20px;
+  z-index: 100000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 2%;
+}
+body header a {
+  color: black;
+  text-decoration: none;
+}
+body header .menu-toggle {
+  display: none;
+}
+body header .logo {
+  width: 65px;
+  display: flex;
+  align-items: center;
+}
+body header .logo img {
+  width: 100%;
+}
+body header .menu {
+  width: 50%;
+  opacity: 80%;
+  background-color: #242424;
+  border-radius: 40px;
+  filter: drop-shadow(0px 0px 13px #000000);
+}
+body header .menu ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  padding-inline-start: 0;
+}
+body header .menu ul a:hover {
+  color: #058022;
+}
+body header .menu ul a li {
+  list-style-type: none;
+  color: #9f9f9f;
+}
+body header .menu ul .signUpInPhone {
+  display: none;
+}
+body header .signUpLogin {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 15%;
+  padding: 6px;
+  gap: 3%;
+  background-color: #242424;
+  border-radius: 40px;
+  filter: drop-shadow(0px 0px 13px #000000);
+}
+body header .signUpLogin a:first-of-type {
+  background-image: linear-gradient(to left, #058022, #044d15);
+  color: white;
+  border-radius: 40px 10px 10px 40px;
+  padding: 10px;
+  text-align: center;
+  border-radius: 10px 40px 40px 10px;
+  width: 60%;
+}
+body header .signUpLogin a:first-of-type:hover {
+  color: black;
+}
+body header .signUpLogin a:last-of-type {
+  width: 40%;
+  background-image: linear-gradient(to left, #058022, #044d15);
+  color: white;
+  border-radius: 40px 10px 10px 40px;
+  padding: 10px;
+  text-align: center;
+  background-image: none;
+  background-color: #303030;
+  color: #929292;
+}
+body header .signUpLogin a:last-of-type:hover {
+  color: #058022;
+}
+body footer {
+  background-color: #0c0b0b;
+  display: flex;
+  justify-content: center;
+  border-top: 15px solid #111111;
+  margin-top: 7%;
+}
+body footer .container {
+  display: flex;
+  width: 90%;
+  align-items: center;
+  justify-content: space-between;
+}
+body footer .container .allParts {
+  display: flex;
+  width: 65%;
+}
+body footer .container .allParts .columns ul li {
+  list-style-type: none;
+}
+body footer .container .allParts .columns ul a {
+  color: #6e6d6d;
+  text-decoration: none;
+  font-size: clamp(10px, 2vw, 20px);
+}
+body footer .container .allParts .columns ul a:first-of-type {
+  color: #6e6d6d;
+  font-size: clamp(15px, 2vw, 25px);
+  font-weight: 900;
+}
+body footer .container .map {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+}
+body footer .container .map iframe {
+  width: 100%;
+  height: 220px;
+  border-radius: 20px;
+}
+
+@media only screen and (min-width: 200px) and (max-width: 600px) {
+  body {
+    position: relative;
+  }
+  body .menu-toggle {
+    display: none;
+  }
+  body .hamburger {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    width: 30px;
+    height: 25px;
+    margin: 20px;
+  }
+  body .hamburger .bar {
+    height: 4px;
+    width: 100%;
+    background-color: #333;
+    margin: 3px 0;
+    transition: all 0.3s ease;
+  }
+  body header .menu {
+    display: none;
+    background-color: #242424;
+    position: absolute;
+    border-radius: 0 10px 10px 0;
+    top: 60px;
+    left: 0;
+    width: 50%;
+    height: 100vh;
+    position: fixed;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  body header .menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex-direction: column;
+    text-align: center;
+  }
+  body header .menu ul a {
+    padding: 15px;
+    display: block;
+  }
+  body header .menu ul a li {
+    text-decoration: none;
+    color: white;
+  }
+  body header .menu ul a .signUpInPhone {
+    display: block;
+  }
+  body header .menu-toggle:checked + .hamburger + .menu {
+    display: block;
+  }
+  body header .signUpLogin {
+    display: none;
+  }
+  body footer .container {
+    flex-direction: column;
+  }
+  body footer .container .allParts {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  body footer .container .allParts .columns {
+    width: 45%;
+    display: flex;
+  }
+  body footer .container .allParts .columns ul {
+    padding-inline-start: 0;
+  }
+  body footer .container .allParts .columns ul a {
+    font-size: clamp(10px, 4vw, 15px);
+  }
+  body footer .container .allParts .columns ul a:first-of-type {
+    font-size: clamp(25px, 4vw, 30px);
+  }
+  body footer .container .map {
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 800px) {
+  body {
+    position: relative;
+  }
+  body .menu-toggle {
+    display: none;
+  }
+  body .hamburger {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    width: 30px;
+    height: 25px;
+    margin: 20px;
+  }
+  body .hamburger .bar {
+    height: 4px;
+    width: 100%;
+    background-color: #333;
+    margin: 3px 0;
+    transition: all 0.3s ease;
+  }
+  body header .menu {
+    display: none;
+    background-color: #242424;
+    position: absolute;
+    border-radius: 0 10px 10px 0;
+    top: 60px;
+    left: 0;
+    width: 50%;
+    height: 100vh;
+    position: fixed;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  body header .menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex-direction: column;
+    text-align: center;
+  }
+  body header .menu ul a {
+    padding: 15px;
+    display: block;
+  }
+  body header .menu ul a li {
+    text-decoration: none;
+    color: white;
+  }
+  body header .menu ul a .signUpInPhone {
+    display: block;
+  }
+  body header .menu-toggle:checked + .hamburger + .menu {
+    display: block;
+  }
+  body header .signUpLogin {
+    display: none;
+  }
+  body footer .container {
+    flex-direction: column;
+  }
+  body footer .container .allParts {
+    justify-content: center;
+    width: 100%;
+  }
+  body footer .container .allParts .columns {
+    width: 45%;
+    display: flex;
+  }
+  body footer .container .allParts .columns ul {
+    padding-inline-start: 0;
+  }
+  body footer .container .map {
+    width: 90%;
+  }
+}
+@media only screen and (min-width: 801px) and (max-width: 1050px) {
+  body header .logo img {
+    width: 80%;
+  }
+  body header .menu {
+    font-size: 13px;
+  }
+  body header .signUpLogin {
+    font-size: 10px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

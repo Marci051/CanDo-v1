@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>کندو | ثبت نام</title>
+    <link rel="stylesheet" href="CSS/style/style.css" />
+    <link rel="stylesheet" href="CSS/SignUpStyle/signUp-style.css" />
+    <link rel="stylesheet" href="CSS/fontsStyle/Vazirmatn-font-face.css" />
+    <link
+      rel="icon"
+      href="Assests/imgaes/icon/main-icon.png"
+      type="image/x-icon"
+    />
+  </head>
+
+  <body>
+    <header>
+      <div class="logo">
+        <img src="Assests/imgaes/icon/main-icon.png" alt="DevHiv logo" />
+      </div>
+      <!-- ******hamburger menu****** -->
+      <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+      <label for="menu-toggle" class="hamburger">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </label>
+      <!-- ******hamburger menu****** -->
+
+      <nav class="menu">
+        <ul>
+          <a href="index.html">
+            <li>صفحه اصلی</li>
+          </a>
+          <a href="explore.html">
+            <li>کند و کاو</li>
+          </a>
+          <a href="">
+            <li>یادگیری</li>
+          </a>
+          <a href="">
+            <li>پشتیبانی</li>
+          </a>
+          <a href="AbouUs.html">
+            <li>درباره ما</li>
+          </a>
+          <a href="">
+            <li>راهنما</li>
+          </a>
+          <!-- <div class="signUpInPhone">
+            <a href="" class="signUpInPhone">
+              <li>ورود</li>
+            </a>
+            <a href="signUp.html" class="signUpInPhone">
+              <li>ثبت</li>
+            </a>
+          </div> -->
+        </ul>
+      </nav>
+      <div class="signUpLogin">
+        <a href="signUp.html">ثبت نام</a>
+        <a href="LogIn.html">ورود</a>
+      </div>
+    </header>
+    <!-- *******************main******************** -->
+    <main>
+      <div class="bgImage">
+        <img src="Assests/imgaes/kandoo.png" alt="" />
+      </div>
+      <!-- **********FORM********** -->
+
+      <form id="form">
+        <fieldset>
+          <legend>ثبت نام</legend>
+          <div>
+            <label>نام</label>
+            <input
+              type="text"
+              required
+              autocomplete="on"
+              placeholder="هاچ"
+              autofocus
+            />
+          </div>
+          <div>
+            <label>نام خانوادگی</label>
+            <input
+              type="text"
+              required
+              autocomplete="on"
+              placeholder="زنبور عسل"
+            />
+          </div>
+
+          <div>
+            <label>نام کاربری</label>
+            <input
+              type="text"
+              required
+              autocomplete="on"
+              placeholder="LittleHoneyBee"
+            />
+          </div>
+          <div>
+            <label>تلفن تماس</label>
+            <input
+              type="text"
+              required
+              autocomplete="on"
+              placeholder="09138729730"
+            />
+          </div>
+
+          <div id="emailInput">
+            <label>ایمیل</label>
+            <input
+              type="email"
+              required
+              autocomplete="on"
+              placeholder="HutchHoneyBee1970@gmail.com"
+            />
+          </div>
+          <div>
+            <label>حوزه تخصص</label>
+            <input list="Career" name="Career" id="Career1" />
+            <datalist name="Career" id="Career">
+              <option value="FrontEnd" selected>فرانت اند</option>
+
+              <option value="CyberSecurity">امنیت شبکه</option>
+              <option value="DataScience">علوم داده</option>
+              <option value="UI/UX Design">
+                طراحی رابط کاربری و تجربه کاربری
+              </option>
+              <option value="BackEnd">بک اند</option>
+            </datalist>
+          </div>
+          <div>
+            <label>زبان دوم</label>
+            <input list="languages" name="languages" id="languages1" />
+
+            <datalist name="languages" id="languages">
+              <option value="English" selected>انگلیسی</option>
+
+              <option value="Spanish">اسپانیایی</option>
+              <option value="German">آلمانی</option>
+              <option value="French">فرانسوی</option>
+            </datalist>
+          </div>
+          <div>
+            <button type="submit">ارسال فرم</button>
+            <p>
+              قبلا ثبت نام کرده اید؟
+              <a href="LogIn.html">وارد شوید</a>
+            </p>
+          </div>
+        </fieldset>
+      </form>
+      <!-- **********FORM********** -->
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="allParts">
+          <div class="columns">
+            <ul>
+              <a href=""><li>دسترسی سریع</li></a>
+
+              <a href="index.html">
+                <li>صفحه اصلی</li>
+              </a>
+              <a href="signUp.html">
+                <li>ثبت نام/ورود</li>
+              </a>
+              <a href="">
+                <li>کندو کاو</li>
+              </a>
+              <a href="">
+                <li>وبلاگ</li>
+              </a>
+              <a href="">
+                <li>درباره ما</li>
+              </a>
+              <a href="">
+                <li>پشتیبانی</li>
+              </a>
+            </ul>
+          </div>
+          <div class="columns">
+            <ul>
+              <a href=""><li>کندو کاو</li></a>
+
+              <a href="">
+                <li>امنیت شبکه</li>
+              </a>
+              <a href="">
+                <li>طراحی وب</li>
+              </a>
+              <a href="">
+                <li>برنامه نویسی اندروید</li>
+              </a>
+              <a href="">
+                <li>گیت و گیت هاب</li>
+              </a>
+              <a href="">
+                <li>مبانی کامپیوتر</li>
+              </a>
+              <a href="">
+                <li>علوم داده</li>
+              </a>
+            </ul>
+          </div>
+          <div class="columns">
+            <ul>
+              <a href=""><li>تماس با ما</li></a>
+
+              <a href="">
+                <li>لینکدین</li>
+              </a>
+              <a href="">
+                <li>شماره تلفن</li>
+              </a>
+              <a href="">
+                <li>تلگرام</li>
+              </a>
+            </ul>
+          </div>
+        </div>
+        <div class="map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d675.7858672713543!2d59.51515763220323!3d36.322067631352866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f6c93cd2ab60d6d%3A0x82bb5c13ba641f01!2sPart%20Software%20Group!5e0!3m2!1sen!2s!4v1728559427965!5m2!1sen!2s"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+    </footer>
+    <script src="JS/script.js"></script>
+  </body>
+</html>

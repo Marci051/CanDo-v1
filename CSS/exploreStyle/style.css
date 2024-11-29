@@ -1,0 +1,62 @@
+* {
+  box-sizing: border-box;
+}
+
+main h1 {
+  color: #909090;
+}
+main #main-container {
+  display: flex;
+}
+main #main-container .boxRow {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+main #main-container .boxRow .boxes {
+  background-color: #212121;
+  border-radius: 20px;
+  width: 45%;
+  padding: 20px;
+  margin: 2%;
+  transition: transform ease 0.5s;
+  position: relative;
+  align-items: center;
+}
+main #main-container .boxRow .boxes:hover {
+  box-shadow: 0 0 3px #909090;
+  transform: translate(0, -10px);
+  cursor: pointer;
+}
+main #main-container .boxRow .boxes .title {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 2%;
+}
+main #main-container .boxRow .boxes .title h3 {
+  color: #b1b1b1;
+  font-size: clamp(15px, 2vw, 20px);
+}
+main #main-container .boxRow .boxes p {
+  color: #909090;
+  text-align: justify;
+  font-size: clamp(10px, 2vw, 15px);
+}
+
+@media screen and (max-width: 600px) {
+  main #main-container .boxRow {
+    display: unset;
+  }
+  main #main-container .boxRow .boxes {
+    width: 98%;
+  }
+  main #main-container .boxRow .boxes:hover {
+    box-shadow: 0 0 3px #909090;
+    transform: translate(-10px, 0);
+    cursor: pointer;
+  }
+  main #main-container .boxRow .boxes div:last-of-type {
+    display: none;
+  }
+}/*# sourceMappingURL=style.css.map */

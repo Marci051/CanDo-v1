@@ -1,0 +1,296 @@
+@import url("https://fonts.cdnfonts.com/css/digital-numbers");
+main .firstSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+main .firstSection .right-side {
+  width: 60%;
+}
+main .firstSection .right-side p {
+  font-size: clamp(50px, 4vw, 140px);
+  color: #087820;
+  font-weight: 900;
+}
+main .firstSection .left-side {
+  width: 40%;
+}
+main .firstSection .left-side p {
+  color: #6e6d6d;
+  font-size: clamp(15px, 2vw, 20px);
+  text-align: justify;
+}
+main .firstSection .left-side p span {
+  color: #087820;
+}
+main .firstSection .left-side .buttons {
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+  gap: 5%;
+}
+main .firstSection .left-side .buttons a:first-of-type {
+  background-image: linear-gradient(to left, #058022, #044d15);
+  color: white;
+  border-radius: 25px;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: transform ease 0.5s;
+  position: relative;
+  align-items: center;
+  width: 25%;
+}
+main .firstSection .left-side .buttons a:first-of-type:hover {
+  box-shadow: 0 0 3px #909090;
+  transform: translate(0, -10px);
+  cursor: pointer;
+}
+main .firstSection .left-side .buttons a:last-of-type {
+  background-image: linear-gradient(to left, #058022, #044d15);
+  color: white;
+  border-radius: 25px;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: transform ease 0.5s;
+  position: relative;
+  align-items: center;
+  background-image: none;
+  background-color: #242424;
+  color: #9f9f9f;
+  width: 25%;
+}
+main .firstSection .left-side .buttons a:last-of-type:hover {
+  box-shadow: 0 0 3px #909090;
+  transform: translate(0, -10px);
+  cursor: pointer;
+}
+main .secondSection {
+  display: flex;
+  justify-content: center;
+  margin-top: 10%;
+}
+main .secondSection .allBoxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  color: white;
+}
+main .secondSection .allBoxes p:first-of-type {
+  font-size: clamp(15px, 2vw, 30px);
+  border-bottom: 1px solid rgb(35, 35, 35);
+  text-align: center;
+}
+main .secondSection .allBoxes p:nth-child(2) {
+  color: #a8a6a6;
+}
+main .secondSection .allBoxes .bigger {
+  width: 55%;
+  box-sizing: border-box;
+  transition: transform ease 0.5s;
+  position: relative;
+  align-items: center;
+  background-color: #111111;
+  padding: 5px 20px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+main .secondSection .allBoxes .bigger:hover {
+  box-shadow: 0 0 3px #909090;
+  transform: translate(0, -10px);
+  cursor: pointer;
+}
+main .secondSection .allBoxes .bigger:first-of-type {
+  margin-left: 10px;
+}
+main .secondSection .allBoxes .bigger:first-of-type .container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+main .secondSection .allBoxes .bigger:first-of-type .container span {
+  width: 65%;
+  color: #6e6d6d;
+  font-size: clamp(8px, 2vw, 23px);
+}
+main .secondSection .allBoxes .bigger:first-of-type .container img {
+  width: 30%;
+  height: 100%;
+  margin: auto;
+}
+main .secondSection .allBoxes .bigger .clock {
+  text-align: center;
+  color: #05801f;
+  font-family: Digital Numbers;
+  font-size: clamp(10px, 4vw, 100px);
+  margin-top: 10%;
+}
+main .secondSection .allBoxes .bigger p#sec {
+  text-align: center;
+  font-size: clamp(8px, 2vw, 23px);
+  color: #9f9f9f;
+}
+main .secondSection .allBoxes .smaller {
+  width: 30%;
+  box-sizing: content-box;
+  background-color: #111111;
+  padding: 5px 20px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  margin-left: 10px;
+  transition: transform ease 0.5s;
+  position: relative;
+  align-items: center;
+}
+main .secondSection .allBoxes .smaller:hover {
+  box-shadow: 0 0 3px #909090;
+  transform: translate(0, -10px);
+  cursor: pointer;
+}
+main .secondSection .allBoxes .smaller .boxPicture {
+  display: flex;
+  justify-content: center;
+}
+main .secondSection .allBoxes .smaller .boxPicture img {
+  width: 80%;
+}
+main .thirdSection {
+  margin-top: 7%;
+}
+main .thirdSection p {
+  color: #a8a6a6;
+  text-align: center;
+  font-size: clamp(20px, 3vw, 40px);
+  font-weight: bold;
+}
+main .thirdSection p span {
+  color: #058022;
+}
+main .fourthSection {
+  margin-top: 7%;
+}
+main .fourthSection .all {
+  width: 100%;
+}
+main .fourthSection .all .cards {
+  color: #a8a6a6;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+main .fourthSection .all .cards .card {
+  width: 40%;
+}
+main .fourthSection .all .cards .card div:first-of-type {
+  display: flex;
+  align-items: center;
+  gap: 2%;
+  font-size: clamp(20px, 4vw, 30px);
+}
+main .fourthSection .all .cards .card div:first-of-type img {
+  width: 50px;
+}
+main .fourthSection .all .cards .card div:last-of-type {
+  text-align: justify;
+}
+main .slider {
+  width: 100%;
+  overflow: hidden;
+}
+main .slider .slider-wrapper {
+  display: flex;
+  gap: 20px;
+  animation: 2s linear 0s infinite normal none running slide;
+  width: 200px;
+}
+main .slider .slider-wrapper img {
+  width: 200px;
+  height: 200px;
+}
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(200px);
+  }
+}
+main .fifthSection {
+  margin-top: 7%;
+}
+main .fifthSection .kandoo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+}
+main .fifthSection .kandoo p {
+  position: absolute;
+  right: 20%;
+  font-size: clamp(10px, 2vw, 50px);
+}
+main .fifthSection .kandoo img:first-of-type {
+  width: 33%;
+}
+main .fifthSection .kandoo img:last-of-type {
+  width: 50%;
+}
+
+@media only screen and (max-width: 800px) {
+  main .firstSection {
+    flex-direction: column;
+    justify-content: center;
+  }
+  main .firstSection .right-side {
+    width: 100%;
+  }
+  main .firstSection .right-side p {
+    font-size: clamp(50px, 4vw, 140px);
+  }
+  main .firstSection .left-side {
+    width: 100%;
+  }
+  main .secondSection .allBoxes .bigger {
+    width: 100%;
+  }
+  main .secondSection .allBoxes .bigger:first-of-type {
+    align-items: center;
+  }
+  main .secondSection .allBoxes .bigger:last-of-type .clock {
+    direction: ltr;
+    margin: auto;
+    font-size: 35px;
+  }
+  main .secondSection .allBoxes .smaller {
+    width: 100%;
+  }
+  main .secondSection .allBoxes .smaller .boxPicture img {
+    width: 30%;
+  }
+  main .slider .slider-wrapper img {
+    width: 100px;
+    height: 100px;
+  }
+  main .fourthSection .all .cards {
+    flex-direction: column;
+  }
+  main .fourthSection .all .cards .card {
+    width: 100%;
+  }
+  main .fifthSection .kandoo p {
+    font-size: clamp(10px, 4vw, 20px);
+  }
+}
+@media only screen and (min-width: 801px) and (max-width: 1024px) {
+  body main .firstSection .left-side p {
+    font-size: clamp(10px, 2vw, 20px);
+  }
+  body main .fourthSection .all .cards img + P {
+    font-size: clamp(17px, 3vw, 25px);
+  }
+}
+
+/*# sourceMappingURL=index-style.css.map */
