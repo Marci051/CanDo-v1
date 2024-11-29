@@ -9,7 +9,7 @@ setInterval(() => {
   document.getElementById("seconds").textContent = String(
     now.getSeconds()
   ).padStart(2, "0");
-  document.getElementById("milliseconds").textContent = String(
-    now.getMilliseconds()
-  ).padStart(3, "0");
+  // document.getElementById("milliseconds").textContent = String(
+  //   now.getMilliseconds()
+  // ).padStart(3, "0");
 }, 100);
